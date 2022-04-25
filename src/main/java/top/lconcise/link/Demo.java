@@ -16,7 +16,8 @@ public class Demo {
 
 //        ListNode reverse01 = ListReverse.reverse01(head);
 //        reverse01.forEach();
-        ListNode reverse02 = ListReverse.reverse02(head);
-        reverse02.forEach();
+//        ListNode reverse02 = ListCommonOperation.reverse02(head);
+        ListNode newHead = ListCommonOperation.removeNthFromEnd01(head, 2);
+        newHead.forEach();
     }
 }
