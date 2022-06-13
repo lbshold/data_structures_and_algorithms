@@ -6,24 +6,8 @@ import lombok.Data;
  * @author: liusj
  * @date: 2022/5/17
  */
-@Data
-public class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
 
-    public TreeNode(int val) {
-        this.val = val;
-    }
-
-    public TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
-}
-
-class Demo {
+public class TreeNodeDemo01 {
 
     public static void main(String[] args) {
         TreeNode node08 = new TreeNode(8);
@@ -69,5 +53,22 @@ class Demo {
         postOrder(treeNode.left);
         postOrder(treeNode.right);
         System.out.print(treeNode.val + " ");
+    }
+}
+
+@Data
+class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+
+    public TreeNode(int val) {
+        this.val = val;
+    }
+
+    public TreeNode(int val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
     }
 }
